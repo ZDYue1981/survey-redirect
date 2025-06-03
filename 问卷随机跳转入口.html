@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>正在为您分配问卷...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {{ font-family: sans-serif; text-align: center; margin-top: 100px; }}
+  </style>
+</head>
+<body>
+  <h2>正在为您随机分配实验视频，请稍候…</h2>
+  <p>系统将在 2 秒后自动跳转至问卷页面</p>
+
+  <script>
+    var links = [
+      "https://www.wjx.cn/vm/hSa3NEy.aspx",  // A
+      "https://www.wjx.cn/vm/wFvsP6e.aspx",  // B
+      "https://www.wjx.cn/vm/OvhCgf2.aspx",  // C
+      "https://www.wjx.cn/vm/PHyzMdb.aspx",  // G
+      "https://www.wjx.cn/vm/wNyYSP6.aspx",  // H
+      "https://www.wjx.cn/vm/Ot4m2hI.aspx"   // I
+    ];
+    var i = Math.floor(Math.random() * links.length);
+    setTimeout(function() {{
+      window.location.href = links[i];
+    }}, 2000);
+  </script>
+</body>
+</html>
